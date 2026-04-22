@@ -75,10 +75,13 @@ Codex → web_search(query="AI新闻") → Gateway WebSocket → 直接返回
 - OAuth 认证
 - 输入校验 + 错误处理
 
-### Phase 3: Layer 2 直调工具
-- 研究 Gateway WebSocket RPC 协议
-- 实现 web_search, web_fetch, exec 等直调工具
-- Router 模式 (借鉴 AIWerk)
+### Phase 3: Layer 2 直调工具 (⏸️ 暂停)
+- **暂停原因**: 目前 OpenClaw 的 tools (web_search, exec, browser 等) 没有比 Codex 自带的能力更好，直调模式价值不大
+- **恢复条件**: 等以后出现精品 tools（Codex 没有的独特能力）再完善 Layer 2
+- 待办:
+  - 研究 Gateway WebSocket RPC 协议
+  - 实现 web_search, web_fetch, exec 等直调工具
+  - Router 模式 (借鉴 AIWerk)
 
 ## Codex 配置方式
 
